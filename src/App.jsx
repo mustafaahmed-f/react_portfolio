@@ -1,13 +1,12 @@
-import { useState } from "react";
-import Navbar from "./Components/Navbar";
-import HomePage from "./Components/HomePage";
-import About from "./Components/About";
+import Navbar from "./Components/NavBar/Navbar";
+import Main from "./Sections/Home/Main";
+import About from "./Sections/About/About";
 
 function App() {
   return (
     <div className="main">
       <Navbar />
-      <HomePage />
+      <Main />
       <About />
     </div>
   );
