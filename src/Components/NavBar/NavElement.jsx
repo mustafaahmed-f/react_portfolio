@@ -12,11 +12,13 @@ function NavElement({ currentSection, icon, section, fn }) {
     <div
       className={`${
         currentSection === section ? "bg-mainColor" : "bg-transparent"
-      } py-1 px-2 text-white`}
-      onClick={() => fn}
+      } py-1 px-2 text-white hover:bg-mainColor rounded-full cursor-pointer sm:mx-2`}
+      onClick={() => fn()}
     >
-      <p className="hidden sm:block">{section}</p>
-      <span className="block sm:hidden">{icon}</span>
+      <a href={`#${section}`}>
+        <p className="hidden sm:block font-semibold">{section}</p>
+        <span className="block sm:hidden">{icon}</span>
+      </a>
     </div>
   );
 }

@@ -49,3 +49,29 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0 0 5px #2960f7;
+  }
+  100% {
+    box-shadow: 0 0px 3px #2960f7, 0 0px 6px #2960f7, 0 0px 9px #2960f7,
+      0 0px 13px #2960f7;
+  }
+}
+
+.show-nav-animation {
+  animation: shadowAnimation 1s infinite alternate;
+}
+
+@layer components {
+  .rightLine {
+    @apply w-10 h-1 bg-white;
+  }
+  .leftLine {
+    @apply w-10 h-1 bg-white;
+  }
+  .sectionTitle {
+    @apply flex items-center justify-center w-full gap-5 mb-6 text-3xl font-semibold text-center text-white lg:gap-10;
+  }
+}
