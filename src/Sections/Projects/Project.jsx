@@ -37,7 +37,11 @@ function Project({
           {liveLink || packageLink ? (
             <div className="flex items-center gap-[2px] sm:gap-1">
               <LinkIcon />
-              <a href={liveLink ? liveLink : packageLink}>
+              <a
+                href={liveLink ? liveLink : packageLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {liveLink ? "Live" : "NPM"}
               </a>
             </div>
@@ -45,7 +49,9 @@ function Project({
 
           <div className="flex items-center gap-[2px] sm:gap-1">
             <GitHubIcon />
-            <a href={githubLink}>Code</a>
+            <a target="_blank" rel="noreferrer" href={githubLink}>
+              Code
+            </a>
           </div>
         </div>
       </div>
