@@ -18,7 +18,7 @@ function About() {
         </div>
         <div className="inline-block py-5">
           <p className="mb-8 text-lg">
-            Hello! I’m Mustafa Ahmed. I&apos;m a fresh graduated mern stack
+            Hello! I&apos;m Mustafa Ahmed. I&apos;m a fresh graduated mern stack
             developer using reactJs & node.js . Capable of learning more about
             my field through my professional life in addition to learning new
             skills. I&apos;m skilled in using HTML, CSS, JS, and creating
