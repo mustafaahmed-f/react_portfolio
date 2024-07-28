@@ -41,6 +41,7 @@ function Project({
                 href={liveLink ? liveLink : packageLink}
                 target="_blank"
                 rel="noreferrer"
+                className="hover:text-cyan-400"
               >
                 {liveLink ? "Live" : "NPM"}
               </a>
@@ -49,7 +50,12 @@ function Project({
 
           <div className="flex items-center gap-[2px] sm:gap-1">
             <GitHubIcon />
-            <a target="_blank" rel="noreferrer" href={githubLink}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={githubLink}
+              className="hover:text-cyan-400"
+            >
               Code
             </a>
           </div>
