@@ -6,11 +6,10 @@ function Navbar() {
   const [showNav, setShowNav] = useState(true);
   const initialRender = useRef(true);
 
-  // let reverseAnimation = initialRender ? "navBtnRotateReverse" : "";
-  let currentNavBtnAnimation = showNav ? "navBtnRotateReverse" : "navBtnRotate";
+  let currentNavBtnAnimation = showNav
+    ? "navBtnRotateReverse "
+    : "navBtnRotate";
   let navBarAnimation = showNav ? "open" : "close";
-
-  console.log(currentNavBtnAnimation);
 
   const sections = [
     { section: "Home", icon: "🏠" },
@@ -48,13 +47,15 @@ function Navbar() {
           })}
         </div>
       </div>
-      <div
-        onClick={handleChangeNavStatus}
-        className={`${
-          !initialRender.current && currentNavBtnAnimation
-        } transition-all show-nav-animation   drop-shadow rounded-full p-[2px] sm:p-1 sm:w-10 sm:h-10 w-7 h-7 font-semibold text-white bg-mainColor cursor-pointer flex items-center justify-center `}
-      >
-        {"<"}
+      <div className="rounded-full show-nav-animation">
+        <div
+          onClick={handleChangeNavStatus}
+          className={` ${
+            !initialRender.current && currentNavBtnAnimation
+          } transition-all  drop-shadow rounded-full p-[2px] sm:p-1 sm:w-10 sm:h-10 w-7 h-7 font-semibold text-white bg-mainColor cursor-pointer flex items-center justify-center `}
+        >
+          {"<"}
+        </div>
       </div>
     </nav>
   );
