@@ -112,26 +112,28 @@ html {
   }
 }
 
-.closeNav {
-  animation: closeNavList 1s forwards ease-in-out;
-  transition: width 1s ease-in-out, height 1s ease-in-out;
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-}
-
-.openNav {
-  animation: openNavList 1s forwards ease-in-out;
-  transition: width 1s ease-in-out, height 1s ease-in-out;
-  width: fit-content;
-  height: fit-content;
-  opacity: 1;
-}
-
+/* Initial state */
 .navList {
-  transition: width 1s ease-in-out, height 1s ease-in-out,
-    opacity 0.7s ease-in-out;
-  /* transition-delay: 0.2s; */
+  transform: translateX(0);
+  max-width: 999999px;
+  max-height: 999999px;
+  transition: transform 1s ease-in-out;
+
+  /* opacity 1s ease-in-out; */
+}
+
+/* Class for closing */
+.navList.close {
+  transform: translateX(100%);
+  /* max-width: 0; */
+  /* max-height: 0; */
+}
+
+/* Class for opening */
+.navList.open {
+  transform: translateX(0);
+  /* max-width: fit-content; */
+  /* max-height: fit-content; */
 }
 
 .navBtnRotate {
