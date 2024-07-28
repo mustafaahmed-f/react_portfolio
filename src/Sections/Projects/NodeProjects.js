@@ -1,7 +1,7 @@
 export const NodeProjects = [
   {
     id: "node1",
-    name: "eCommerce",
+    name: "eCommerce Backend",
     imgUrl:
       "https://res.cloudinary.com/dvvmu40wx/image/upload/v1722021749/Projects/eCommerce_kfdqqs.png",
     category: "Node",
@@ -21,7 +21,7 @@ export const NodeProjects = [
   },
   {
     id: "node2",
-    name: "SARAHA",
+    name: "SARAHA Backend",
     imgUrl:
       "https://res.cloudinary.com/dvvmu40wx/image/upload/v1722021748/Projects/SARAHA_euojtu.png",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2048px-Node.js_logo.svg.png",
@@ -34,7 +34,7 @@ export const NodeProjects = [
   },
   {
     id: "node3",
-    name: "Trello",
+    name: "Trello Backend",
     imgUrl:
       "https://res.cloudinary.com/dvvmu40wx/image/upload/v1722021748/Projects/Trello_ax1kwm.png",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2048px-Node.js_logo.svg.png",

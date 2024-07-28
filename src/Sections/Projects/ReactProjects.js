@@ -1,7 +1,7 @@
 export const ReactProjects = [
   {
     id: "react1",
-    name: "Saraha",
+    name: "Saraha Frontend",
     imgUrl:
       "https://res.cloudinary.com/dvvmu40wx/image/upload/v1722021711/Projects/Saraha_wb3ccg.png",
     category: "React",

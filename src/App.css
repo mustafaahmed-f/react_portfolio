@@ -75,3 +75,68 @@ html {
     @apply flex items-center justify-center w-full gap-5 mb-6 text-3xl font-semibold text-center text-white lg:gap-10;
   }
 }
+
+@keyframes NavBtnRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes NavBtnRotateReverse {
+  0% {
+    transform: rotate(450deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes closeNavList {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes openNavList {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeNav {
+  animation: closeNavList 1s forwards ease-in-out;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.openNav {
+  animation: openNavList 1s forwards ease-in-out;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+  opacity: 1;
+}
+
+.navList {
+  transition: width 1s ease-in-out, height 1s ease-in-out,
+    opacity 0.7s ease-in-out;
+  /* transition-delay: 0.2s; */
+}
+
+.navBtnRotate {
+  animation: NavBtnRotate 1s forwards ease-in-out;
+}
+.navBtnRotateReverse {
+  animation: NavBtnRotateReverse 1s forwards ease-in-out;
+}

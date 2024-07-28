@@ -51,7 +51,7 @@ function Experience() {
                   {item.location && <p className="text-lg ">{item.location}</p>}
                   <p className="">{item.typeOfWork}</p>
                 </div>
-                <ul className="flex flex-col gap-2 list-disc">
+                <ul className="flex flex-col gap-2 px-5 list-disc">
                   {item.details.map((detail) => (
                     <li key={detail} className="text-darkFont">
                       {detail}

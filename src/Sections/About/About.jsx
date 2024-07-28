@@ -48,7 +48,13 @@ function About() {
           </ul>
           <div className="flex items-center justify-start">
             <button className="px-6 py-2 text-lg text-white transition-all duration-500 border-transparent rounded-full cursor-pointer bg-secondaryColor hover:bg-hoverBtn">
-              <a href="#" className="text-white no-underline" download={false}>
+              <a
+                href="https://drive.usercontent.google.com/u/0/uc?id=1xaohxGfDxo28UR9CWhTNWJtpw3E35PPO&export=download"
+                className="text-white no-underline"
+                download={true}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Download CV
               </a>
             </button>

@@ -31,7 +31,7 @@ function Projects() {
           />
         ))}
       </div>
-      <div className="grid gap-3 grid-cols-projectsXS sm:grid-cols-projectsSM md:grid-cols-projectsMD sm:gap-4">
+      <div className="grid gap-3 grid-cols-projectsXS sm:grid-cols-projectsSM md:grid-cols-projectsMD sm:gap-4 lg:gap-14">
         {projectsArray.map((project, i) => (
           <Project key={i} {...project} />
         ))}
