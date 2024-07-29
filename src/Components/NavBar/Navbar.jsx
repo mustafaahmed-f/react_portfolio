@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import NavElement from "./NavElement";
+import { useSectionContext } from "../../Hooks/useSection";
 
 function Navbar() {
-  const [section, setSection] = useState("Home");
+  const { section, setSection } = useSectionContext();
   const [showNav, setShowNav] = useState(true);
   const initialRender = useRef(true);
 

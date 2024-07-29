@@ -1,8 +1,21 @@
+import { useEffect } from "react";
 import { skillsData } from "./SkillsData";
+import { useInView } from "react-intersection-observer";
+import { useSectionContext } from "../../Hooks/useSection";
 
 function Skills() {
+  const { setSection } = useSectionContext();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) setSection("Skills");
+  }, [inView, setSection]);
+
   return (
     <section
+      ref={ref}
       id="Skills"
       className="flex flex-col items-center w-full gap-5 px-3 py-16 bg-skillsSec sm:gap-6 sm:px-12"
     >

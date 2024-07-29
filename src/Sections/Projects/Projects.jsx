@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { allProjects } from "./AllProjects";
 import CategoryBtnComponent from "./categoryBtn";
 import Project from "./Project";
+import { useSectionContext } from "../../Hooks/useSection";
+import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const [category, setCategory] = useState("All");
@@ -11,10 +13,23 @@ function Projects() {
       ? allProjects
       : allProjects.filter((item) => item.category === category);
 
+  const { setSection } = useSectionContext();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) setSection("Projects");
+  }, [inView, setSection]);
+
+  console.log(inView);
+
   return (
     <section
+      ref={ref}
       id="Projects"
       className="flex flex-col items-center w-full gap-5 px-3 py-16 bg-aboutSec sm:gap-6 sm:px-12"
+      key={category}
     >
       <h2 className="sectionTitle">
         <div className="leftLine"></div>

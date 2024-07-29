@@ -6,6 +6,7 @@ import Skills from "./Sections/Skills/Skills";
 import Experience from "./Sections/Experience/Experience";
 import Projects from "./Sections/Projects/Projects";
 import Contact from "./Sections/Contact/Contact";
+import { useState } from "react";
 
 function App() {
   return (

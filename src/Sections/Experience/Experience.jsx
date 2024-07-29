@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { experienceData } from "./ExperienceData";
+import { useInView } from "react-intersection-observer";
+import { useSectionContext } from "../../Hooks/useSection";
 
 function Experience() {
   const [selectedCompany, setSelectedCompany] = useState(
@@ -10,8 +12,18 @@ function Experience() {
     setSelectedCompany(companyName);
   }
 
+  const { setSection } = useSectionContext();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) setSection("Experience");
+  }, [inView, setSection]);
+
   return (
     <section
+      ref={ref}
       id="Experience"
       className="flex flex-col items-center w-full gap-5 px-3 py-16 bg-black sm:gap-6 sm:px-12"
     >

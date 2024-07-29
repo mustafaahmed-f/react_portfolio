@@ -1,8 +1,22 @@
 // import React from "react";
 
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useSectionContext } from "../../Hooks/useSection";
+
 function Home() {
+  const { setSection } = useSectionContext();
+  const { ref, inView, entry } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) setSection("Home");
+  }, [inView, setSection]);
+
   return (
     <section
+      ref={ref}
       id="Home"
       className="w-full h-screen p-0 text-white bg-no-repeat bg-cover"
       style={{

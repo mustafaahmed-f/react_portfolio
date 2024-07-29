@@ -1,8 +1,22 @@
+import { useInView } from "react-intersection-observer";
+import { useSectionContext } from "../../Hooks/useSection";
+import { useEffect } from "react";
+
 function About() {
+  const { setSection } = useSectionContext();
+  const { ref, inView, entry } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) setSection("About");
+  }, [inView, setSection]);
+
   return (
     <section
       id="About"
       className="flex flex-col items-center px-3 py-8 overflow-hidden text-white bg-aboutSec"
+      ref={ref}
     >
       <h2 className="sectionTitle">
         <div className="leftLine"></div>

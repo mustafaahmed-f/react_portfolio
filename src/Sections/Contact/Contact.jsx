@@ -3,7 +3,9 @@ import InputComponent from "../../Components/Input/InputComponent";
 import TextAreaComponent from "../../Components/TextArea/TextAreaComponent";
 import { formValidation } from "./FormValidation";
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { useSectionContext } from "../../Hooks/useSection";
 
 const initialValues = {
   title: "",
@@ -18,6 +20,15 @@ const userId = import.meta.env.VITE_USER_ID;
 
 function Contact() {
   const [loading, setLoading] = useState(false);
+  const { setSection } = useSectionContext();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) setSection("Contact");
+  }, [inView, setSection]);
+
   const formik = useFormik({
     initialValues,
     validateOnBlur: true,
@@ -34,7 +45,7 @@ function Contact() {
           userId // Replace with your EmailJS user ID
         )
         .then(
-          (result) => {
+          () => {
             setLoading(false);
             alert("Email sent successfully!");
             resetForm();
@@ -49,6 +60,7 @@ function Contact() {
   });
   return (
     <section
+      ref={ref}
       id="Contact"
       className="flex flex-col items-center w-full gap-5 px-3 py-16 bg-educationSec sm:gap-6 sm:px-12"
     >
