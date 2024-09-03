@@ -12,7 +12,7 @@ export const experienceData = [
     id: 2,
     companyName: "VODO",
     role: "Frontend developer",
-    period: "Jun 2024 ~ present",
+    period: "Jun 2024 ~ Aug 2024",
     location: "Riyadh, Saudi Arabia",
     typeOfWork: "Internship - remotely",
     details: [
