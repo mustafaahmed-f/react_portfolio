@@ -3,7 +3,7 @@ export const experienceData = [
     id: 1,
     companyName: "LevelUp ESG® ",
     role: "Frontend developer",
-    period: "Jun 2024 ~ present",
+    period: "SEP 2024 ~ present",
     location: "London, England",
     typeOfWork: "Internship - remotely",
     details: [],
