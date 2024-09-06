@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import LinkIcon from "./LinkIcon";
 import GitHubIcon from "./GitHubIcon";
+import { motion } from "framer-motion";
+import { item } from "./variants";
 
 Project.propTypes = {
   imgUrl: PropTypes.string,
@@ -14,10 +16,22 @@ function Project({
   githubLink,
   liveLink,
   packageLink,
+  id,
   description,
 }) {
+  // console.log(key);
   return (
-    <div className="relative flex flex-col items-center gap-2 overflow-hidden text-base rounded-lg sm:text-lg sm:rounded-xl sm:gap-3 bg-projects">
+    <motion.li
+      className="relative flex flex-col items-center gap-2 overflow-hidden text-base rounded-lg item sm:text-lg sm:rounded-xl sm:gap-3 bg-projects"
+      variants={item}
+      key={id}
+      viewport={{ once: true, amount: 0.1, margin: "0px" }}
+      // transition={{ delay: 0.3 }}
+      // whileInView="visible"
+      animate="visible"
+      initial="hidden"
+      transition={{ delay: 0.3, duration: 0.7 }} // Faster animation
+    >
       <div className="absolute top-0 left-0 flex items-center justify-center w-12 h-12 bg-darkBorder">
         <img src={icon} className="w-full" />
       </div>
@@ -61,7 +75,7 @@ function Project({
           </div>
         </div>
       </div>
-    </div>
+    </motion.li>
   );
 }
 
