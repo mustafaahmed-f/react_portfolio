@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useSectionContext } from "../../Hooks/useSection";
+// import linkedIn from "../../../public/SVG/linkedIn";
+import Links from "./Links";
 
 function Home() {
   const { setSection } = useSectionContext();
@@ -33,6 +35,7 @@ function Home() {
           <h2 className="text-mainColor font-semibold bg-[#363d56] px-6 py-2 rounded-full my-4">
             Mern stack developer
           </h2>
+          <Links />
         </div>
       </header>
     </section>

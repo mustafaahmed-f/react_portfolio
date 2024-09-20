@@ -63,7 +63,7 @@ function About() {
           <div className="flex items-center justify-start">
             <button className="px-6 py-2 text-lg text-white transition-all duration-500 border-transparent rounded-full cursor-pointer bg-secondaryColor hover:bg-hoverBtn">
               <a
-                href="https://drive.usercontent.google.com/download?id=1jpuvpE-U-pOdab9Ky_IfsZV976seBGFn&export=download&authuser=0&confirm=t&uuid=d25ff679-8518-472d-b446-fcef4c341e40&at=APZUnTX7MhaNd_kRPl8RzMJQfrug:1723206551514"
+                href="https://drive.google.com/file/d/1xVgK9-mbiVp398YcdZ16BN9vSkDl9R12/view?usp=sharing"
                 className="text-white no-underline"
                 download={true}
                 target="_blank"
