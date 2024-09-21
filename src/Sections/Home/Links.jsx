@@ -1,5 +1,5 @@
-import GithubIcon from "../../SVGIcons/Github";
-import LinkedInIcon from "../../SVGIcons/linkedIn";
+import GithubIcon from "../../SVGIcons/Github.jsx";
+import LinkedInIcon from "../../SVGIcons/linkedIn.jsx";
 
 function Links() {
   return (
