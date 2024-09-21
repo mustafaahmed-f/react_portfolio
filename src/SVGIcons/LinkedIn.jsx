@@ -1,4 +1,4 @@
-function LinkedIn() {
+function LinkedInIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +20,4 @@ function LinkedIn() {
   );
 }
 
-export default LinkedIn;
+export default LinkedInIcon;

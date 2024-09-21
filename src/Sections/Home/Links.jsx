@@ -1,5 +1,5 @@
-import Github from "../../SVG/Github";
-import LinkedIn from "../../SVG/linkedIn";
+import GithubIcon from "../../SVGIcons/Github";
+import LinkedInIcon from "../../SVGIcons/linkedIn";
 
 function Links() {
   return (
@@ -10,7 +10,7 @@ function Links() {
         href="https://www.linkedin.com/in/mustafafekry/"
         className="p-2 bg-transparent border rounded-full cursor-pointer border-hoverBtn"
       >
-        <LinkedIn />
+        <LinkedInIcon />
       </a>
       <a
         target="_blank"
@@ -18,7 +18,7 @@ function Links() {
         href="https://github.com/mustafaahmed-f"
         className="p-2 border rounded-full cursor-pointer bg-slate-400 border-hoverBtn"
       >
-        <Github />
+        <GithubIcon />
       </a>
       <a
         target="_blank"
@@ -26,12 +26,7 @@ function Links() {
         href="https://leetcode.com/u/mustafaahmed1997/"
         className="px-3 py-2 bg-transparent border rounded-full cursor-pointer border-hoverBtn"
       >
-        <img
-          src="../../../public/leetCode.svg"
-          width={35}
-          height={35}
-          alt="leetCode"
-        />
+        <img src="../leetCode.svg" width={35} height={35} alt="leetCode" />
       </a>
     </div>
   );

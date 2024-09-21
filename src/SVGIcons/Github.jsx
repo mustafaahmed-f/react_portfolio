@@ -1,4 +1,4 @@
-function Github() {
+function GithubIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ function Github() {
   );
 }
 
-export default Github;
+export default GithubIcon;

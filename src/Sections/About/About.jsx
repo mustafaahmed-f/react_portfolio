@@ -56,6 +56,11 @@ function About() {
               <div className="absolute left-[-27px] top-1/2 transform -translate-y-1/2 w-3 h-3 border-4 border-mainColor bg-transparent rounded-full"></div>
             </li>
             <li className="relative my-3 text-xl sm:text-2xl">
+              <span className="font-semibold text-mainColor">Phone: </span>
+              +20 115 659 0999
+              <div className="absolute left-[-27px] top-1/2 transform -translate-y-1/2 w-3 h-3 border-4 border-mainColor bg-transparent rounded-full"></div>
+            </li>
+            <li className="relative my-3 text-xl sm:text-2xl">
               <span className="font-semibold text-mainColor">Age: </span>27
               <div className="absolute left-[-27px] top-1/2 transform -translate-y-1/2 w-3 h-3 border-4 border-mainColor bg-transparent rounded-full"></div>
             </li>
