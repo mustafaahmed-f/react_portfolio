@@ -1,5 +1,5 @@
-import Github from "../../../public/SVG/Github";
-import LinkedIn from "../../../public/SVG/linkedIn";
+import Github from "../../SVG/Github";
+import LinkedIn from "../../SVG/linkedIn";
 
 function Links() {
   return (
@@ -24,7 +24,7 @@ function Links() {
         target="_blank"
         rel="noreferrer"
         href="https://leetcode.com/u/mustafaahmed1997/"
-        className="p-2 bg-transparent border rounded-full cursor-pointer border-hoverBtn"
+        className="px-3 py-2 bg-transparent border rounded-full cursor-pointer border-hoverBtn"
       >
         <img
           src="../../../public/leetCode.svg"
