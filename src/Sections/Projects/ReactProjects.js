@@ -27,14 +27,22 @@ export const ReactProjects = [
   },
   {
     id: "react3",
-    name: "Quiz App",
+    name: "Tello",
     imgUrl:
-      "https://res.cloudinary.com/dvvmu40wx/image/upload/v1722021712/Projects/React_quiz_app_wlkfur.png",
+      "https://res.cloudinary.com/dvvmu40wx/image/upload/v1730406206/Projects/Trello_asyoaw.png",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
     category: "React",
-    liveLink: "https://quizreactappbymustafa.netlify.app/",
-    githubLink: "https://github.com/mustafaahmed-f/quiz-app-react",
-    description: "A simple quiz app with multiple questions about reactJs.",
-    technologies: ["ReactJs"],
+    liveLink: "https://trellobymustafa.netlify.app/",
+    githubLink: "https://github.com/mustafaahmed-f/trello",
+    description: "A web-based application for managing tasks and projects.",
+    technologies: [
+      "ReactJs",
+      "TypeScript",
+      "Supabase",
+      "React-router-dom",
+      "Tailwind CSS",
+      "DnD drag and drop library",
+      "React form hook + yup",
+    ],
   },
 ];

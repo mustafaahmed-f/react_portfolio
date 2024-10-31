@@ -9,7 +9,14 @@ import { container } from "./variants";
 
 function Projects() {
   const [category, setCategory] = useState("All");
-  const categories = ["All", "React", "Node", "Vanilla Js", "Others"];
+  const categories = [
+    "All",
+    "Next.js",
+    "React",
+    "Node",
+    "Vanilla Js",
+    "Others",
+  ];
   const projectsArray =
     category === "All"
       ? allProjects
