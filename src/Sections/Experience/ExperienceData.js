@@ -1,15 +1,28 @@
 export const experienceData = [
   {
     id: 1,
+    companyName: "Crystal Soft ERP systems",
+    role: "Frontend developer",
+    period: "NOV 2024 ~ present",
+    location: "Cairo, Egypt",
+    typeOfWork: "Contract - remotely",
+    details: [
+      "Collaborating on the development of ERP systems, focusing on building and optimizing user interfaces for the admin panel using React.js and TypeScript.",
+      "Contributing to the delivery of high-quality features while maintaining scalability and usability for enterprise-level applications.",
+      "Prepared to take ownership of additional projects in ERP solutions upon completion of the current admin panel.",
+    ],
+  },
+  {
+    id: 2,
     companyName: "LevelUp ESG® ",
     role: "Frontend developer",
-    period: "SEP 2024 ~ present",
+    period: "SEP 2024",
     location: "London, England",
     typeOfWork: "Internship - remotely",
     details: [],
   },
   {
-    id: 2,
+    id: 3,
     companyName: "VODO",
     role: "Frontend developer",
     period: "Jun 2024 ~ Aug 2024",
@@ -22,7 +35,7 @@ export const experienceData = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     companyName: "Sync interns",
     role: "Frontend developer",
     period: "Apr 2023",
