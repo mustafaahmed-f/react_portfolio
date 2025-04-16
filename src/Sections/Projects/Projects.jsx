@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 import { container } from "./variants";
 
 function Projects() {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("Next.js");
   const categories = [
-    "All",
+    // "All",
     "Next.js",
     "React",
     "Node",

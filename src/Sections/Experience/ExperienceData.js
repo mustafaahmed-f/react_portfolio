@@ -3,7 +3,7 @@ export const experienceData = [
     id: 1,
     companyName: "Crystal Soft ERP systems",
     role: "Frontend developer",
-    period: "NOV 2024 ~ present",
+    period: "NOV 2024 ~ FEB 2025",
     location: "Cairo, Egypt",
     typeOfWork: "Contract - remotely",
     details: [
