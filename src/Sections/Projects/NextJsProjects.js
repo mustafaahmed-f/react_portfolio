@@ -1,6 +1,20 @@
 export const NextJsProjects = [
   {
     id: "next1",
+    name: "E-Commerce Admin dashboard",
+    imgUrl:
+      "https://res.cloudinary.com/dvvmu40wx/image/upload/v1753560353/Projects/Admin_dashboard_pswsyp.png",
+    category: "Next.js",
+    icon: "https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png",
+    liveLink:
+      "https://ecommerce-admin-dashboard-mustafa.vercel.app/login?redirectto=%2F",
+    githubLink: "https://github.com/mustafaahmed-f/ecommerce_admin_dashboard",
+    description:
+      "A modern and modular admin dashboard for managing e-commerce operations — including products, coupons, users, and more.",
+    technologies: ["Next.js", "Typescript", "MongoDB", "Redis", "TailwindCSS"],
+  },
+  {
+    id: "next2",
     name: "E-Commerce",
     imgUrl:
       "https://res.cloudinary.com/dvvmu40wx/image/upload/v1747771299/Projects/Ecommerce_nextjs_sdb2m0.png",
@@ -13,7 +27,7 @@ export const NextJsProjects = [
     technologies: ["Next.js", "Typescript", "MongoDB", "Redis", "TailwindCSS"],
   },
   {
-    id: "next2",
+    id: "next3",
     name: "Wild Oasis",
     imgUrl:
       "https://res.cloudinary.com/dvvmu40wx/image/upload/v1730406543/Projects/Wil_oasis_dl4ix5.png",

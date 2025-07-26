@@ -63,4 +63,8 @@ export const skillsData = [
     name: "MySQL",
     icon: "https://www.vectorlogo.zone/logos/mysql/mysql-official.svg",
   },
+  {
+    name: "Redis",
+    icon: "https://www.vectorlogo.zone/logos/redis/redis-icon.svg",
+  },
 ];
