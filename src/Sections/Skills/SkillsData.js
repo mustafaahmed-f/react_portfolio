@@ -67,4 +67,8 @@ export const skillsData = [
     name: "Redis",
     icon: "https://www.vectorlogo.zone/logos/redis/redis-icon.svg",
   },
+  {
+    name: "Docker",
+    icon: "https://www.vectorlogo.zone/logos/docker/docker-icon.svg",
+  },
 ];
